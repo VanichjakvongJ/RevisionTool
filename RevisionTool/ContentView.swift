@@ -8,9 +8,27 @@
 import SwiftUI
 
 struct ContentView: View {
+    let options = ["A", "B", "C", "D"]
+    
     var body: some View {
-        Text("Hello, world!")
+        VStack(alignment: .leading) {
+            // question
+            Text("What is paging?")
+                .padding()
+            
+            // options
+            ForEach(options, id: \.self) { option in
+                Button("Option \(option)") {
+                    
+                }
+                .padding()
+            }
+            Button("Next Question") {
+                
+            }
             .padding()
+        }
+        
     }
 }
 
